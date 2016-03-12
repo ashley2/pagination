@@ -1,6 +1,15 @@
-<h1>T</h1>
+<h1>Person</h1>
 
-<button ng-click="goHome()">Go Home</button>
+<button ui-sref="home">Go Home</button>
 
-<input type="text" placeholder="Parap" ng-model="param">
-<button ng-click="goToPerson(param)">Go to Person</button>
+<div id="cardContainer">
+  <div class="card card-block">
+    <h4 class="card-title"><label for="">Name:&nbsp; </label>{{person.name}}</h4>
+    <p class="card-text"><label for="">Birth Year:&nbsp; </label>{{person.birth_year}}</p>
+    <p class="card-text"> <label for="">Eye Color:&nbsp; </label>{{person.eye_color}}</p>
+    <p class="card-text"><label for="">Gender:&nbsp; </label>{{person.gender}}</p>
+  </div>
+
+
+
+

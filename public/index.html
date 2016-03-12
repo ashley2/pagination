@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Angular</title>
+  <title>Star Wars</title>
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
@@ -16,36 +16,26 @@
 
 </head>
 <body ng-app="routingApp">
-  <h1>Angular</h1>
-  <hr>
+<div id="headContainer">
+  <img ng-src="http://cdn.paper4pc.com/images/star-wars-logo-wallpaper-3.jpg" alt="">
+</div>
   <span>
-    <a ui-sref="home">Home</a>
-    <a ui-sref="person">Person</a>
-    <a ui-sref="people">People</a>
+    <a class="pageLink" ui-sref="home">Home</a>
+    <span class="pageLink">|</span >
+    <a class="pageLink"ui-sref="people">People</a>
   </span>
-  <hr>
 
   <ui-view></ui-view>
-
-<nav>
-  <ul class="pagination">
-    <li>
-      <a href="#" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
-      </a>
-    </li>
-    <li><a href="#">1</a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">4</a></li>
-    <li><a href="#">5</a></li>
-    <li>
-      <a href="#" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
-      </a>
-    </li>
-  </ul>
-</nav>
-
+  <footer>
+    <nav>
+      <ul class="pagination">
+        <li><a ui-sref="people({id:1})">1</a></li>
+        <li><a ui-sref="people({id:2})">2</a></li>
+        <li><a ui-sref="people({id:3})">3</a></li>
+        <li><a ui-sref="people({id:4})">4</a></li>
+        <li><a ui-sref="people({id:5})">5</a></li>
+      </ul>
+    </nav>
+  </footer>
 </body>
 </html>

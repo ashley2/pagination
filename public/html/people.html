@@ -1,7 +1,6 @@
-<h1>people</h1>
 
-<button ng-click="test()">Test</button>
 
-<ul>
-  <li ng-repeat="person in people">{{person.name}}</li>
-</ul>
+
+<div id="peopleCont"> 
+  <li ng-click="goToPerson($index)" ng-repeat="person in people track by $index">{{person.name}}</li>
+</div>

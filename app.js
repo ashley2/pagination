@@ -16,10 +16,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
-app.get('/', function(req, res) {
-  var indexPath = path.join(__dirname, 'index.html');
-  res.sendFile(indexPath);
-});
+// app.get('/', function(req, res) {
+//   var indexPath = path.join(__dirname, 'index.html');
+//   res.sendFile(indexPath);
+// });
 
 var server = http.createServer(app);
 
