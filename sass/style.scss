@@ -6,6 +6,22 @@
 #cardContainer {
   width: 100vw; 
 }
+#headContainer{
+  background-color: black;
+}
+
+#peopleCont{
+  color: orange;
+  font-size: 20px;
+  width: 700px;
+  margin: 0 auto;
+  list-style-type: none;
+  columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
+  text-align: center;
+  padding-bottom: 20px;
+}
 
 .card {
   padding-top:15px;
@@ -25,28 +41,37 @@ footer {
   height:50px;
 }
 
-#headContainer{
-background-color: black;
-}
 img {
   height: 300px;
+}
+li:hover {
+  transition: background-color 1s ease;
+  background-color: orange;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
 }
 .pageLink {
   font-size: 20px;
   color: #34958f;
 }
 
-#peopleCont {
-  // height: 300px;
+#directions {
+  color: red;
+  font-size: 20px;
 }
 
-#peopleCont{
-    margin: 15px 10px 0 10px;
-    list-style-type: none;
-    columns: 3;
-    -webkit-columns: 3;
-    -moz-columns: 3;
-  text-align: center;
+#links {
+  margin: 20px 0 60px 0;
 }
+
+.pages {
+  color: orange;
+  border: none;
+}
+
+
+
+
 
 

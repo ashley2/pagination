@@ -16,26 +16,28 @@
 
 </head>
 <body ng-app="routingApp">
-<div id="headContainer">
-  <img ng-src="http://cdn.paper4pc.com/images/star-wars-logo-wallpaper-3.jpg" alt="">
-</div>
-  <span>
-    <a class="pageLink" ui-sref="home">Home</a>
-    <span class="pageLink">|</span >
-    <a class="pageLink"ui-sref="people">People</a>
-  </span>
+  <div id="headContainer">
+    <img ng-src="http://cdn.paper4pc.com/images/star-wars-logo-wallpaper-3.jpg" alt="">
+  </div>
+  <div id=links>
+    <span>
+      <a class="pageLink" ui-sref="home">Home</a>
+      <span class="pageLink">|</span >
+        <a class="pageLink"ui-sref="people">Characters</a>
+      </span>
+    </div>
 
-  <ui-view></ui-view>
-  <footer>
-    <nav>
-      <ul class="pagination">
-        <li><a ui-sref="people({id:1})">1</a></li>
-        <li><a ui-sref="people({id:2})">2</a></li>
-        <li><a ui-sref="people({id:3})">3</a></li>
-        <li><a ui-sref="people({id:4})">4</a></li>
-        <li><a ui-sref="people({id:5})">5</a></li>
-      </ul>
-    </nav>
-  </footer>
-</body>
-</html>
+    <ui-view></ui-view>
+    <footer>
+      <nav>
+        <ul class="pagination">
+        <li><a class="pages" ui-sref="people({id:1})">1</a></li>
+        <li><a class="pages" ui-sref="people({id:2})">2</a></li>
+        <li><a class="pages" ui-sref="people({id:3})">3</a></li>
+        <li><a class="pages" ui-sref="people({id:4})">4</a></li>
+        <li><a class="pages" ui-sref="people({id:5})">5</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+  </html>
